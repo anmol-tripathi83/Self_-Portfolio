@@ -26,19 +26,19 @@ const Index = () => {
       title: "Real-Time Chat App",
       description: "Secure JWT authentication, real-time WebSocket messaging, scalable to 500+ users. Features themes and online/offline status for improved UX.",
       technologies: ["React", "Node.js", "Express", "Socket.io", "WebRTC", "MongoDB"],
-      liveLink: "#",
+      liveLink: "https://chat-app-fndy.onrender.com/",
     },
     {
       title: "Pizza App – Full-Stack E-Commerce Platform",
       description: "Fully responsive ordering app with secure payments via Razorpay. Role-based access for users and admins.",
       technologies: ["React", "Node.js", "MongoDB", "JWT", "Razorpay"],
-      githubLink: "#",
+      githubLink: "https://github.com/anmol-tripathi83/Pizza_App",
     },
     {
       title: "AI-Powered DSA Instructor",
       description: "Interactive chat app for DSA explanations with AI-driven guidance and strict DSA-only rules.",
       technologies: ["Node.js", "Gemini API", "REST APIs"],
-      githubLink: "#",
+      githubLink: "https://github.com/anmol-tripathi83/DSA_INSTRUCTOR",
     },
   ];
 
@@ -103,7 +103,7 @@ const Index = () => {
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button variant="hero" size="lg" asChild>
-              <a href="#contact">View My Resume</a>
+              <a href="https://drive.google.com/file/d/1h9JP4_wVppzuO-G8hibkpOQ9HzHcW_Xh/view?usp=sharing">View My Resume</a>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a href="#contact">Contact Me</a>
