@@ -116,7 +116,7 @@ const Index = () => {
               </a>
             </Button>
             <Button variant="ghost" size="icon" asChild>
-              <a href="https://github.com/anmoltripathi83" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/anmol-tripathi83" target="_blank" rel="noopener noreferrer">
                 <Github className="h-5 w-5" />
               </a>
             </Button>
@@ -259,7 +259,7 @@ const Index = () => {
               <CardContent>
                 <p className="text-muted-foreground">300+ problems solved</p>
                 <Button variant="link" className="p-0 h-auto" asChild>
-                  <a href="https://leetcode.com/anmoltripathi25" target="_blank" rel="noopener noreferrer">
+                  <a href="https://leetcode.com/u/anmoltripathi8303/" target="_blank" rel="noopener noreferrer">
                     View Profile
                   </a>
                 </Button>
@@ -275,7 +275,7 @@ const Index = () => {
               <CardContent>
                 <p className="text-muted-foreground">2★ Coder (max rating 1400+)</p>
                 <Button variant="link" className="p-0 h-auto" asChild>
-                  <a href="https://www.codechef.com/users/anmoltripathi25" target="_blank" rel="noopener noreferrer">
+                  <a href="https://www.codechef.com/users/anmoltripathi8" target="_blank" rel="noopener noreferrer">
                     View Profile
                   </a>
                 </Button>
@@ -320,7 +320,7 @@ const Index = () => {
                     <Linkedin className="h-5 w-5" />
                     linkedin.com/in/anmoltripathi25
                   </a>
-                  <a href="https://github.com/anmoltripathi83" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
+                  <a href="https://github.com/anmol-tripathi83" target="_blank" rel="noopener noreferrer" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
                     <Github className="h-5 w-5" />
                     github.com/anmoltripathi83
                   </a>
