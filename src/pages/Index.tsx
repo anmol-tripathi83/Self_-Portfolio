@@ -102,7 +102,7 @@ const Index = () => {
         <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-transparent"></div>
         <div className="container mx-auto text-center relative z-10 fade-in">
           <h1 className="text-5xl md:text-7xl font-bold mb-6">
-            Hi, I'm <span className="gradient-text">Anmol Tripathi</span> 👋
+            Hi, I'm <span className="gradient-text">Anmol Tripathi</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
             Aspiring Software Engineer | Web Developer
@@ -172,10 +172,6 @@ const Index = () => {
                       <div className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-xl shadow-sm">600+</div>
                       <div className="text-sm text-muted-foreground mt-2 font-medium">DSA Solved</div>
                     </div>
-                    <div className="text-center">
-                      <div className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-xl shadow-sm">7+</div>
-                      <div className="text-sm text-muted-foreground mt-2 font-medium">Open Source</div>
-                    </div>
                   </div>
                 </div>
                 
@@ -184,7 +180,7 @@ const Index = () => {
                   <div className="relative group">
                     <div className="w-56 h-56 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl group-hover:shadow-3xl transition-all duration-500">
                       <img 
-                        src="/public/Self_photo.jpg" 
+                        src="/public/profile_photo.jpg" 
                         alt="Anmol Tripathi"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
@@ -411,7 +407,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold">Get In Touch</h2>
           </div>
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="space-y-4 mt-10">
+            <div className="space-y-4">
               <Card className="border-border/50">
                 <CardContent className="pt-6 space-y-4">
                   <a href="mailto:anmoltripathi8303@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
