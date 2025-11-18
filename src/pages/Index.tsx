@@ -180,7 +180,7 @@ const Index = () => {
                   <div className="relative group">
                     <div className="w-56 h-56 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl group-hover:shadow-3xl transition-all duration-500">
                       <img 
-                        src="/public/profile_photo.jpg" 
+                        src="/profile_photo.jpg" 
                         alt="Anmol Tripathi"
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
