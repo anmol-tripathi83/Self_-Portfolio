@@ -4,7 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { ProjectCard } from "@/components/ProjectCard";
 import { SkillCategory } from "@/components/SkillCategory";
-import { Mail, Phone, Linkedin, Github, ExternalLink, GraduationCap, Code, Award, Briefcase } from "lucide-react";
+import { Mail, Phone, BookOpen, School, Linkedin, Github, ExternalLink, GraduationCap, Code, Award, Briefcase } from "lucide-react";
 import { useState } from "react";
 import { useToast } from "@/hooks/use-toast";
 
@@ -35,9 +35,15 @@ const Index = () => {
       githubLink: "https://github.com/anmol-tripathi83/Pizza_App",
     },
     {
+      title: "AI-Powered Website Builder",
+      description: "AI-based tool that generates complete HTML, CSS, and JavaScript websites using real-time code creation, live previews, and automated bundling through the Gemini API.",
+      technologies: ["Node.js", "Gemini API", "HTML", "CSS", "JavaScript"],
+      githubLink: "https://github.com/your-repo-link",
+    },
+    {
       title: "AI-Powered DSA Instructor",
-      description: "Interactive chat app for DSA explanations with AI-driven guidance and strict DSA-only rules.",
-      technologies: ["Node.js", "Gemini API", "REST APIs"],
+      description: "AI-driven assistant for DSA learning that provides step-by-step explanations, validates logic, and gives structured hints while enforcing strict DSA-focused responses.",
+      technologies: ["Node.js", "Gemini API", "REST APIs", "HTML", "CSS", "JS"],
       githubLink: "https://github.com/anmol-tripathi83/DSA_INSTRUCTOR",
     },
   ];
@@ -53,7 +59,7 @@ const Index = () => {
     },
     {
       title: "Backend & Database",
-      skills: ["Node.js", "Next.js", "Express.js", "REST APIs", "MongoDB", "SQL"],
+      skills: ["Node.js", "Next.js", "Express.js", "REST APIs", "MongoDB", "SQL", "PostgreSQL"],
     },
     {
       title: "AI/ML & Emerging Tech",
@@ -64,8 +70,8 @@ const Index = () => {
       skills: ["OOPs", "DSA", "System Design", "OS", "DBMS", "CN", "Compiler Design"],
     },
     {
-      title: "Tools",
-      skills: ["VS Code", "Git", "Postman", "Microsoft SQL Server"],
+      title: "Tools & ORM",
+      skills: ["VS Code", "Git", "GitHub", "Postman", "Microsoft SQL Server", "Prisma", "Cursor"],
     },
     {
       title: "Soft Skills",
@@ -99,11 +105,11 @@ const Index = () => {
             Hi, I'm <span className="gradient-text">Anmol Tripathi</span> 👋
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Aspiring Software Engineer | Web Developer | Problem Solver
+            Aspiring Software Engineer | Web Developer
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button variant="hero" size="lg" asChild>
-              <a href="https://drive.google.com/file/d/1h9JP4_wVppzuO-G8hibkpOQ9HzHcW_Xh/view?usp=sharing">View My Resume</a>
+              <a href="https://drive.google.com/file/d/1nMMe5_SPV7W3zVd2q-Tv8bzQdUpqQB14/view?usp=sharing">View My Resume</a>
             </Button>
             <Button variant="outline" size="lg" asChild>
               <a href="#contact">Contact Me</a>
@@ -131,19 +137,66 @@ const Index = () => {
 
       {/* About Section */}
       <section id="about" className="py-20 px-4">
-        <div className="container mx-auto max-w-4xl fade-in">
-          <div className="flex items-center gap-3 mb-8">
-            <Code className="h-8 w-8 text-primary" />
-            <h2 className="text-4xl font-bold">About Me</h2>
+        <div className="container mx-auto max-w-6xl fade-in">
+          <div className="flex items-center gap-3 mb-12">
+            <div className="p-2 bg-primary/10 rounded-lg">
+              <Code className="h-8 w-8 text-primary" />
+            </div>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+              About Me
+            </h2>
           </div>
-          <Card className="border-border/50">
-            <CardContent className="pt-6">
-              <p className="text-lg leading-relaxed text-muted-foreground">
-                I am a passionate Computer Science student at IIIT Sonepat with a CGPA of 9.3/10. 
-                I enjoy solving real-world problems with technology, contributing to open-source projects, 
-                and continuously learning new skills. My interests include Web Development, Data Structures & Algorithms, 
-                and exploring advanced areas like AI/ML, Kubernetes, and Blockchain.
-              </p>
+          
+          <Card className="border-border/50 bg-gradient-to-br from-card to-card/80 shadow-xl hover:shadow-2xl transition-all duration-500 group">
+            <CardContent className="p-8 lg:p-10">
+              <div className="flex flex-col lg:flex-row items-center gap-10">
+                {/* Text Content */}
+                <div className="flex-1 space-y-6">
+                  <div className="space-y-4">
+                    <p className="text-lg leading-relaxed text-muted-foreground">
+                      I am a Computer Science student at IIIT Sonepat (CGPA: 9.3/10) with a strong passion for building 
+                      real-world, scalable products. I love creating full-stack web applications, exploring deep concepts 
+                      in Data Structures & Algorithms, and contributing to open-source communities. Along with continuous 
+                      learning, I enjoy diving into advanced technologies like AI/ML and Blockchain to expand 
+                      my problem-solving toolkit and push my technical boundaries.
+                    </p>
+                  </div>
+                  
+                  {/* Enhanced Stats */}
+                  <div className="flex flex-wrap gap-6 pt-6 border-t border-border/30">
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-xl shadow-sm">9.3/10</div>
+                      <div className="text-sm text-muted-foreground mt-2 font-medium">CGPA</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-xl shadow-sm">600+</div>
+                      <div className="text-sm text-muted-foreground mt-2 font-medium">DSA Solved</div>
+                    </div>
+                    <div className="text-center">
+                      <div className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-xl shadow-sm">7+</div>
+                      <div className="text-sm text-muted-foreground mt-2 font-medium">Open Source</div>
+                    </div>
+                  </div>
+                </div>
+                
+                {/* Enhanced Profile Picture */}
+                <div className="flex-shrink-0">
+                  <div className="relative group">
+                    <div className="w-56 h-56 rounded-2xl overflow-hidden border-4 border-primary/20 shadow-2xl group-hover:shadow-3xl transition-all duration-500">
+                      <img 
+                        src="/public/Self_photo.jpg" 
+                        alt="Anmol Tripathi"
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                      />
+                    </div>
+                    {/* Animated border effect */}
+                    <div className="absolute inset-0 rounded-2xl border-2 border-primary/10 group-hover:border-primary/30 transition-all duration-500 -z-10 group-hover:scale-105"></div>
+                    {/* Floating elements */}
+                    <div className="absolute -top-3 -right-3 w-6 h-6 bg-primary/20 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+                    <div className="absolute -bottom-3 -left-3 w-4 h-4 bg-primary/10 rounded-full group-hover:scale-150 transition-transform duration-300"></div>
+                  </div>
+                </div>
+              </div>
             </CardContent>
           </Card>
         </div>
@@ -151,37 +204,80 @@ const Index = () => {
 
       {/* Education Section */}
       <section id="education" className="py-20 px-4 bg-muted/30">
-        <div className="container mx-auto max-w-4xl fade-in">
-          <div className="flex items-center gap-3 mb-8">
-            <GraduationCap className="h-8 w-8 text-primary" />
-            <h2 className="text-4xl font-bold">Education</h2>
+        <div className="container mx-auto max-w-6xl fade-in">
+          <div className="flex items-center gap-3 mb-12">
+            <div className="p-2 bg-primary/10 rounded-lg">
+              <GraduationCap className="h-8 w-8 text-primary" />
+            </div>
+            <h2 className="text-4xl font-bold bg-gradient-to-r from-foreground to-foreground/70 bg-clip-text text-transparent">
+              Education
+            </h2>
           </div>
-          <div className="space-y-4">
-            <Card className="border-border/50 hover-lift">
-              <CardHeader>
-                <CardTitle>B.Tech in Computer Science</CardTitle>
-                <CardDescription>Indian Institute of Information Technology, Sonepat</CardDescription>
+          
+          <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
+            {/* B.Tech Card */}
+            <Card className="border-border/50 bg-card hover:bg-card/90 shadow-lg hover:shadow-xl transition-all duration-300 group hover-lift">
+              <CardHeader className="pb-4">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                    <GraduationCap className="h-5 w-5 text-primary" />
+                  </div>
+                  <CardTitle className="text-xl">B.Tech in Computer Science</CardTitle>
+                </div>
+                <CardDescription className="text-base font-medium">
+                  Indian Institute of Information Technology, Sonepat
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold text-primary">CGPA: 9.3/10</p>
+                <div className="flex items-center gap-2">
+                  <div className="text-2xl font-bold text-primary">9.3/10</div>
+                  <span className="text-sm text-muted-foreground">CGPA</span>
+                </div>
+                <div className="mt-2 text-sm text-muted-foreground">2023 – 2027</div>
               </CardContent>
             </Card>
-            <Card className="border-border/50 hover-lift">
-              <CardHeader>
-                <CardTitle>Higher Secondary Education</CardTitle>
-                <CardDescription>Dr. Rizvi Springfield School</CardDescription>
+
+            {/* Higher Secondary Card */}
+            <Card className="border-border/50 bg-card hover:bg-card/90 shadow-lg hover:shadow-xl transition-all duration-300 group hover-lift">
+              <CardHeader className="pb-4">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                    <BookOpen className="h-5 w-5 text-primary" />
+                  </div>
+                  <CardTitle className="text-xl">Higher Secondary Education</CardTitle>
+                </div>
+                <CardDescription className="text-base font-medium">
+                  Dr. Rizvi Springfield School
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold text-primary">91.4%</p>
+                <div className="flex items-center gap-2">
+                  <div className="text-2xl font-bold text-primary">93.8%</div>
+                  <span className="text-sm text-muted-foreground">Percentage</span>
+                </div>
+                <div className="mt-2 text-sm text-muted-foreground">2021 – 2023</div>
               </CardContent>
             </Card>
-            <Card className="border-border/50 hover-lift">
-              <CardHeader>
-                <CardTitle>Secondary Education</CardTitle>
-                <CardDescription>BP Public School</CardDescription>
+
+            {/* Secondary Education Card */}
+            <Card className="border-border/50 bg-card hover:bg-card/90 shadow-lg hover:shadow-xl transition-all duration-300 group hover-lift">
+              <CardHeader className="pb-4">
+                <div className="flex items-center gap-3 mb-2">
+                  <div className="p-2 bg-primary/10 rounded-lg group-hover:bg-primary/20 transition-colors">
+                    <School className="h-5 w-5 text-primary" />
+                  </div>
+                  <CardTitle className="text-xl">Secondary Education</CardTitle>
+                </div>
+                <CardDescription className="text-base font-medium">
+                  BP Public School
+                </CardDescription>
               </CardHeader>
               <CardContent>
-                <p className="text-lg font-semibold text-primary">93.8%</p>
+                <div className="flex items-center gap-2">
+                  <div className="text-2xl font-bold text-primary">91.4%</div>
+                  <span className="text-sm text-muted-foreground">Percentage</span>
+                </div>
+                <div className="mt-2 text-sm text-muted-foreground">2019 – 2021</div>
               </CardContent>
             </Card>
           </div>
@@ -233,10 +329,20 @@ const Index = () => {
             <Code className="h-8 w-8 text-primary" />
             <h2 className="text-4xl font-bold">Featured Projects</h2>
           </div>
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-            {projects.map((project) => (
-              <ProjectCard key={project.title} {...project} />
-            ))}
+          
+          {/* Horizontal scroll container */}
+          <div className="relative">
+            <div className="flex overflow-x-auto pb-6 snap-x snap-mandatory scrollbar-hide gap-6">
+              {projects.map((project) => (
+                <div key={project.title} className="flex-shrink-0 w-[85vw] md:w-[400px] snap-start">
+                  <ProjectCard {...project} />
+                </div>
+              ))}
+            </div>
+            
+            {/* Optional: Scroll gradient indicators */}
+            <div className="absolute right-0 top-0 bottom-0 w-20 bg-gradient-to-l from-background to-transparent pointer-events-none"></div>
+            <div className="absolute left-0 top-0 bottom-0 w-20 bg-gradient-to-r from-background to-transparent pointer-events-none"></div>
           </div>
         </div>
       </section>
@@ -257,7 +363,7 @@ const Index = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">300+ problems solved</p>
+                <p className="text-muted-foreground">450+ problems solved</p>
                 <Button variant="link" className="p-0 h-auto" asChild>
                   <a href="https://leetcode.com/u/anmoltripathi8303/" target="_blank" rel="noopener noreferrer">
                     View Profile
@@ -273,7 +379,7 @@ const Index = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">2★ Coder (max rating 1400+)</p>
+                <p className="text-muted-foreground">2★ Coder (max rating 1527+)</p>
                 <Button variant="link" className="p-0 h-auto" asChild>
                   <a href="https://www.codechef.com/users/anmoltripathi8" target="_blank" rel="noopener noreferrer">
                     View Profile
@@ -287,7 +393,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                  <li>Solved 500+ coding problems across multiple platforms</li>
+                  <li>Solved 600+ coding problems across multiple platforms</li>
                   <li>Top 10% of 50,000 applicants in Reliance Foundation Scholarship</li>
                   <li>Active hackathon participant & open-source contributor</li>
                 </ul>
@@ -305,7 +411,7 @@ const Index = () => {
             <h2 className="text-4xl font-bold">Get In Touch</h2>
           </div>
           <div className="grid gap-8 md:grid-cols-2">
-            <div className="space-y-4">
+            <div className="space-y-4 mt-10">
               <Card className="border-border/50">
                 <CardContent className="pt-6 space-y-4">
                   <a href="mailto:anmoltripathi8303@gmail.com" className="flex items-center gap-3 text-muted-foreground hover:text-foreground transition-colors">
