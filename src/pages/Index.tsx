@@ -23,10 +23,28 @@ const Index = () => {
 
   const projects = [
     {
-      title: "Real-Time Chat App",
+      title: "SolveForge – Online Coding Platform",
+      description: "Full-stack coding platform supporting 5+ programming languages with real-time code execution, AI-powered problem-solving assistant, and secure authentication. Designed for scalability, performance, and seamless learning experience.",
+      technologies: [ "React", "Node.js", "Express", "MongoDB", "Redis", "AWS", "Piston API", "Gemini AI", "JWT"],
+      liveLink: "https://solveforge.online/",
+    },
+    {
+      title: "DriftTalk – Real-Time Chat App",
       description: "Secure JWT authentication, real-time WebSocket messaging, scalable to 500+ users. Features themes and online/offline status for improved UX.",
       technologies: ["React", "Node.js", "Express", "Socket.io", "WebRTC", "MongoDB"],
       liveLink: "https://chat-app-fndy.onrender.com/",
+    },
+    {
+      title: "BioBranch – Personal Link Management Platform",
+      description: "High-performance Linktree-style web app built using Next.js App Router with dynamic routing, reusable components, and SEO-optimized server-side rendering for fast load times and scalability.",
+      technologies: [ "Next.js", "TypeScript", "Tailwind CSS", "Shadcn UI", "Server Components", "Vercel"],
+      githubLink: "https://github.com/anmol-tripathi83/Bio_branch",
+    },
+    {
+      title: "Internet Of Journals – Research Management System",
+      description: "Enterprise-grade research journal platform. Led development of role-based authorization system, implemented secure media handling using Cloudinary, and optimized MongoDB data models for high-performance manuscript processing.",
+      technologies: [ "React", "TypeScript", "Node.js", "Express", "MongoDB", "JWT", "OAuth", "Cloudinary", "Stripe"],
+      githubLink: "https://github.com/your-repo-link",
     },
     {
       title: "Pizza App – Full-Stack E-Commerce Platform",
@@ -51,27 +69,27 @@ const Index = () => {
   const skillCategories = [
     {
       title: "Languages",
-      skills: ["C", "C++", "Java", "Python", "JavaScript", "TypeScript"],
+      skills: ["C", "C++", "JavaScript", "TypeScript", "Python", "SQL"],
     },
     {
       title: "Frontend",
-      skills: ["React.js", "Tailwind CSS", "HTML", "CSS", "Redux"],
+      skills: ["React.js", "Tailwind CSS", "HTML", "CSS", "Redux", "ShadCN UI"],
     },
     {
       title: "Backend & Database",
-      skills: ["Node.js", "Next.js", "Express.js", "REST APIs", "MongoDB", "SQL", "PostgreSQL"],
+      skills: ["Node.js", "Next.js", "Express.js", "REST APIs", "JWT Auth", "MongoDB", "MySQL", "PostgreSQL", "Redis"],
     },
     {
       title: "AI/ML & Emerging Tech",
-      skills: ["GenAI", "RAG", "Vector Databases", "Pinecone", "Weaviate", "Blockchain"],
+      skills: ["GenAI", "RAG", "Vector Databases", "Pinecone", "Blockchain"],
     },
     {
       title: "Concepts",
       skills: ["OOPs", "DSA", "System Design", "OS", "DBMS", "CN", "Compiler Design"],
     },
     {
-      title: "Tools & ORM",
-      skills: ["VS Code", "Git", "GitHub", "Postman", "Microsoft SQL Server", "Prisma", "Cursor"],
+      title: "Cloud & Tools & ORM",
+      skills: ["AWS EC2", "VS Code", "Git", "GitHub", "Postman", "Microsoft SQL Server", "Prisma", "Render", "Vercel"],
     },
     {
       title: "Soft Skills",
@@ -105,7 +123,7 @@ const Index = () => {
             Hi, I'm <span className="gradient-text">Anmol Tripathi</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Aspiring Software Engineer | Web Developer
+            Aspiring Software Development Engineer | Web Developer
           </p>
           <div className="flex gap-4 justify-center flex-wrap">
             <Button variant="hero" size="lg" asChild>
@@ -154,7 +172,7 @@ const Index = () => {
                 <div className="flex-1 space-y-6">
                   <div className="space-y-4">
                     <p className="text-lg leading-relaxed text-muted-foreground">
-                      I am a Computer Science student at IIIT Sonepat (CGPA: 9.3/10) with a strong passion for building 
+                      I am a Computer Science student at IIIT Sonepat (CGPA: 9.32/10) with a strong passion for building 
                       real-world, scalable products. I love creating full-stack web applications, exploring deep concepts 
                       in Data Structures & Algorithms, and contributing to open-source communities. Along with continuous 
                       learning, I enjoy diving into advanced technologies like AI/ML and Blockchain to expand 
@@ -165,7 +183,7 @@ const Index = () => {
                   {/* Enhanced Stats */}
                   <div className="flex flex-wrap gap-6 pt-6 border-t border-border/30">
                     <div className="text-center">
-                      <div className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-xl shadow-sm">9.3/10</div>
+                      <div className="text-2xl font-bold text-primary bg-primary/10 px-4 py-2 rounded-xl shadow-sm">9.32/10</div>
                       <div className="text-sm text-muted-foreground mt-2 font-medium">CGPA</div>
                     </div>
                     <div className="text-center">
@@ -226,7 +244,7 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <div className="flex items-center gap-2">
-                  <div className="text-2xl font-bold text-primary">9.3/10</div>
+                  <div className="text-2xl font-bold text-primary">9.32/10</div>
                   <span className="text-sm text-muted-foreground">CGPA</span>
                 </div>
                 <div className="mt-2 text-sm text-muted-foreground">2023 – 2027</div>
@@ -251,7 +269,7 @@ const Index = () => {
                   <div className="text-2xl font-bold text-primary">93.8%</div>
                   <span className="text-sm text-muted-foreground">Percentage</span>
                 </div>
-                <div className="mt-2 text-sm text-muted-foreground">2021 – 2023</div>
+                <div className="mt-2 text-sm text-muted-foreground">2019 – 2021</div>
               </CardContent>
             </Card>
 
@@ -273,7 +291,7 @@ const Index = () => {
                   <div className="text-2xl font-bold text-primary">91.4%</div>
                   <span className="text-sm text-muted-foreground">Percentage</span>
                 </div>
-                <div className="mt-2 text-sm text-muted-foreground">2019 – 2021</div>
+                <div className="mt-2 text-sm text-muted-foreground">2017 – 2019</div>
               </CardContent>
             </Card>
           </div>
@@ -309,9 +327,8 @@ const Index = () => {
             </CardHeader>
             <CardContent>
               <ul className="list-disc list-inside space-y-2 text-muted-foreground">
-                <li>7+ merged PRs across collaborative repositories</li>
-                <li>Enhanced web development projects with features and optimizations</li>
-                <li>Implemented algorithms improving scalability and performance</li>
+                <li>Contributed 6+ merged pull requests to multiple open-source projects in Web Development and Algorithms, improving functionality and code efficiency.</li>
+                <li>Enhanced project documentation and optimized algorithms, leading to cleaner, more maintainable code for project collaborators.</li>
               </ul>
             </CardContent>
           </Card>
@@ -359,7 +376,7 @@ const Index = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">450+ problems solved</p>
+                <p className="text-muted-foreground">550+ problems solved</p>
                 <Button variant="link" className="p-0 h-auto" asChild>
                   <a href="https://leetcode.com/u/anmoltripathi8303/" target="_blank" rel="noopener noreferrer">
                     View Profile
@@ -375,7 +392,7 @@ const Index = () => {
                 </CardTitle>
               </CardHeader>
               <CardContent>
-                <p className="text-muted-foreground">2★ Coder (max rating 1527+)</p>
+                <p className="text-muted-foreground">3★ Coder (max rating 1612+)</p>
                 <Button variant="link" className="p-0 h-auto" asChild>
                   <a href="https://www.codechef.com/users/anmoltripathi8" target="_blank" rel="noopener noreferrer">
                     View Profile
@@ -389,9 +406,11 @@ const Index = () => {
               </CardHeader>
               <CardContent>
                 <ul className="list-disc list-inside space-y-2 text-muted-foreground">
+                  <li>Secured 11th place among 100 teams in the DigiGreen Hackathon.</li>
+                  <li>Selected twice for the internal Smart India Hackathon (SIH) rounds.</li>
+                  <li>Selected for the Prelims Round of CodeFest 2026 Global among 13000+ applicants.</li>
                   <li>Solved 600+ coding problems across multiple platforms</li>
                   <li>Top 10% of 50,000 applicants in Reliance Foundation Scholarship</li>
-                  <li>Active hackathon participant & open-source contributor</li>
                 </ul>
               </CardContent>
             </Card>
