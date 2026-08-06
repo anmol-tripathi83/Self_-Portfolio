@@ -11,7 +11,7 @@ export function About() {
           <div className="flex flex-col lg:flex-row items-center gap-12">
             <div className="flex-1 space-y-6">
               <p className="text-lg leading-relaxed text-muted-foreground max-w-xl">
-                I am a Computer Science student at IIIT Sonepat (CGPA: 9.32/10) with a strong
+                I am a Computer Science student at IIIT Sonepat (CGPA: 9.06/10) with a strong
                 passion for building real-world, scalable products. I love creating full-stack
                 web applications, exploring deep concepts in Data Structures & Algorithms, and
                 contributing to open-source communities. Along with continuous learning, I enjoy
@@ -21,15 +21,15 @@ export function About() {
               <div className="flex flex-wrap gap-6 pt-8 border-t border-border/50">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary bg-gradient-to-br from-primary/15 to-primary/5 px-5 py-3 rounded-2xl shadow-sm inline-block border border-primary/10">
-                    9.32/10
+                    9.06/10
                   </div>
                   <div className="text-sm text-muted-foreground mt-2 font-medium">CGPA</div>
                 </div>
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary bg-gradient-to-br from-primary/15 to-primary/5 px-5 py-3 rounded-2xl shadow-sm inline-block border border-primary/10">
-                    600+
+                    800+
                   </div>
-                  <div className="text-sm text-muted-foreground mt-2 font-medium">DSA Solved</div>
+                  <div className="text-sm text-muted-foreground mt-2 font-medium">DSA Problem Solved</div>
                 </div>
               </div>
             </div>

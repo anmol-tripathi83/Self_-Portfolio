@@ -20,11 +20,30 @@ export const projects: Project[] = [
     githubLink: "https://github.com/anmol-tripathi83/SolveForge-Coding-platform",
     thumbnail: "/solveforge.png",
   },
+    {
+    title: "DesignForge – AI System Design Interview Platform",
+    description:
+      "Production-ready AI platform for practicing System Design interviews through interactive requirement gathering, architecture evaluation, and personalized AI feedback. Powered by an Agentic RAG pipeline to simulate realistic interview experiences with context-aware responses and visual architecture generation.",
+    technologies: [
+      "React",
+      "FastAPI",
+      "PostgreSQL",
+      "Redis",
+      "LangGraph",
+      "Qdrant",
+      "Gemini AI",
+      "JWT",
+      "Docker",
+    ],
+    liveLink: "https://design-forge-ai-eight.vercel.app/",
+    githubLink: "https://github.com/anmol-tripathi83/DesignForge_AI",
+    thumbnail: "/designforge.png",
+  },
   {
     title: "DriftTalk – Real-Time Chat Platform",
     description:
       "Secure JWT authentication, real-time WebSocket messaging, scalable to 500+ users. Features themes and online/offline status for improved UX.",
-    technologies: ["React", "Node.js", "Express", "Socket.io", "WebRTC", "MongoDB"],
+    technologies: ["React", "Node.js", "Express", "Socket.io", "MongoDB"],
     liveLink: "https://chat-app-fndy.onrender.com/",
     githubLink: "https://github.com/anmol-tripathi83/CHAT-APP",
     thumbnail: "/drifttalk.png",
@@ -111,7 +130,7 @@ export const skillCategories: SkillCategory[] = [
   },
   {
     title: "AI/ML & Emerging Tech",
-    skills: ["GenAI", "RAG", "Vector Databases", "Pinecone", "Blockchain"],
+    skills: ["GenAI", "RAG", "Vector Databases", "Pinecone", "Langgraph"],
   },
   {
     title: "Concepts",
@@ -141,7 +160,7 @@ export const education: EducationItem[] = [
   {
     title: "B.Tech in Computer Science",
     institution: "Indian Institute of Information Technology, Sonepat",
-    score: "9.32/10",
+    score: "9.06/10",
     scoreLabel: "CGPA",
     period: "2023 – 2027",
     icon: "graduation",
@@ -186,10 +205,10 @@ export const achievements: Achievement[] = [
 ];
 
 export const otherAchievementsList = [
-  "Secured 11th place among 100 teams in the DigiGreen Hackathon.",
+  "Secured 11th place among 50+ teams in the DigiGreen Hackathon.",
   "Selected twice for the internal Smart India Hackathon (SIH) rounds.",
   "Selected for the Prelims Round of CodeFest 2026 Global among 13000+ applicants.",
-  "Solved 600+ coding problems across multiple platforms",
+  "Solved 800+ coding problems across multiple platforms",
   "Top 10% of 50,000 applicants in Reliance Foundation Scholarship",
 ];
 
@@ -210,5 +229,5 @@ export const socialLinks = {
   github: "https://github.com/anmol-tripathi83",
   email: "anmoltripathi8303@gmail.com",
   resume:
-    "https://drive.google.com/file/d/10KrVt15avACS45rND8tVru6gcTsyJI-J/view?usp=sharing",
+    "https://drive.google.com/file/d/1q3datPv9LZMm4f5UdxOQxsPpCdYfA8Te/view?usp=sharing",
 };
