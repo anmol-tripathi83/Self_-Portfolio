@@ -187,7 +187,7 @@ export const achievements: Achievement[] = [
   {
     title: "LeetCode",
     description: "550+ problems solved",
-    link: "https://leetcode.com/u/anmoltripathi8303/",
+    link: "https://leetcode.com/u/anmol8303",
     linkLabel: "View Profile",
   },
   {
